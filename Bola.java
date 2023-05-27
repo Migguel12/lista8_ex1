@@ -1,14 +1,19 @@
 public class Bola {
-
+    
     private String cor;
-    private double diametro;
-    private String material;
+    double circunferencia;
+    String material = "Borracha";
+
+    Bola(String cor){
+        this.cor = cor;
+    }
 
     public void trocaCor(String novaCor){
-        cor = novaCor;
 
+        cor = novaCor;
     }
-    public void mostraCor(){
+
+    public String mostraCor(){
         return cor;
     }
 }
